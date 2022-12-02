@@ -1,0 +1,440 @@
+body{
+  box-sizing: border-box;
+  font-family: 'Coda', cursive;
+  text-align: center;
+  background-color: #ffffffa6;
+  background: #ffffffa6 url('./../annie-spratt-6a3nqQ1YwBw-unsplash.jpg');
+  min-height: 100vh;
+  // position: relative;
+}
+
+.container {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffffa6;
+  min-height: 100vh;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 600;
+  color: #00bcd4;
+
+  .first-img {
+    text-align: start;
+    width: 80px;
+    margin-right: 30px;
+    
+  }
+  #second-img {
+    text-align: end;
+    width: 80px;
+    margin-left: 40px;
+  }
+  img {
+    width: 100%;
+    
+  }
+  #first-img {
+    transform: scaleX(-1);
+    text-align: end;
+  }
+
+  h1 {
+    margin: 0;
+    border-radius: 10px; 
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 85px Varela Round, sans-serif;
+    height: 100px;
+    animation: move linear 2000ms infinite;  
+  }
+  
+  @keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 rgb(215, 228, 30), 
+        3px -3px 0 rgb(215, 228, 30),
+        2px -2px 0 rgb(215, 228, 30),
+        1px -1px 0 rgb(215, 228, 30),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 hsla(0, 100%, 50%, 1), 
+        3px 3px 0 hsla(0, 100%, 50%, 1), 
+        2px 2px 0 hsla(0, 100%, 50%, 1), 
+        1px 1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 hsla(0, 100%, 50%, 1), 
+        -3px 3px 0 hsla(0, 100%, 50%, 1), 
+        -2px 2px 0 hsla(0, 100%, 50%, 1), 
+        -1px 1px 0 hsla(0, 100%, 50%, 1),
+        4px -4px 0 hsla(180, 100%, 50%, 1), 
+        3px -3px 0 hsla(180, 100%, 50%, 1), 
+        2px -2px 0 hsla(180, 100%, 50%, 1), 
+        1px -1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 hsla(180, 100%, 50%, 1), 
+        3px 3px 0 hsla(180, 100%, 50%, 1), 
+        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 hsla(0, 100%, 50%, 1), 
+        -3px -3px 0 hsla(0, 100%, 50%, 1), 
+        -2px -2px 0 hsla(0, 100%, 50%, 1), 
+        -1px -1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+}
+
+.leader-board {
+  margin: 10px auto;
+  background:  rgba(58, 133, 116, 0.4);
+  font-size: 25px;
+  font-weight: 500;
+  padding: 12px;
+  border: 2px solid #000839;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 10px;
+  }
+}
+
+.game-details {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.restart {
+  font-size: 25px;
+  border: none;
+  background: none;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.option {
+  margin-top: 30px;
+  width: 450px;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #82ffffc9;
+  border: 3px solid #08729ae6;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 2px #4c4e4ebf;
+  color: #651b55;
+}
+
+.level {
+  display: flex;
+  margin: 20px 0 -10px 0;
+  justify-content: space-between;
+
+  button {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    color: #651b55;
+    &:foucs {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #easy {
+    background-color: #79f11e;
+    color: #002c6f;
+  }
+
+  #medium {
+    background-color: #f5f500;
+    color: #710000;
+  }
+
+  #hard {
+    background-color: #ec0f0f;
+    color: #43fafb;
+  }
+}
+
+.game-platform {
+  display: none;
+  // background: linear-gradient(45deg, #f10793d9, #f10793d9);  
+  padding: 25px;
+  margin-bottom: 50px;
+  border: 2px solid rgb(58, 54, 54);
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px 5px #4a4c4c;
+
+  .icon {
+    color: #fff;
+    font-size: 70px;
+    background-color: #1f646b;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 2px #595a5a8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      margin: auto 0;
+      visibility: hidden;
+    }    
+  }
+  
+  .visible {
+    background-color: #00ffff;
+    i {
+      margin: auto 0;
+      visibility: visible;
+    }
+  }
+}
+.overlay {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+.game-completed {
+  top: 40%;
+  left: 30%;
+  border: 3px solid #153d54;
+  width: 430px;
+  color: #fff;
+  background-color: #0a3640a6;
+  border-radius: 10px;
+
+  p {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 25px;
+  }
+}
+
+.play-again {
+  display: flex;
+  flex-direction: column;
+  
+  .yes-no {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    button {
+    padding: 5px 15px;
+    border-radius: 6px;
+    border:none;
+    border: 2px solid #153518;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      }
+    }
+  }
+
+  .yes {
+    font-size: 20px;
+    background-color: #1bec1b;
+    &:hover {
+      cursor: pointer;
+    }  
+  }
+
+  .no {
+    font-size: 20px;
+    background-color: red;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .progress {
+    background-color: #0dd1fb;
+    margin: 20px;
+    border: 2px solid #034a30;
+    border-radius: 5px;
+  }
+  .save-progress {
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #031327;
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  background: #47494a;
+}
+
+//Css for leader-board.html file
+.leader-board-details {
+  margin: 10px auto;
+  background:  rgba(58, 133, 116, 0.4);
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  border: 2px solid #000839;
+  border-radius: 10px;
+}
+
+table {
+  margin: 30px;
+
+  caption {
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+  }
+
+  tr {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .detail {
+  background-color: #00ffff;
+  }
+  
+  th{
+    width: 150px;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  td{
+    width: 150px;
+    font-size: 20px;
+    padding: 2px 5px;
+  }
+}
+
+form {
+  display: none;
+  align-items: center;
+  height: 110px;
+  border: 3px solid #113663cc;
+  background-color:  #64f5e7;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  button {
+    margin-right: 20px;
+    font-size: 20px;
+    border: 2px solid #b70689;
+    background:#35f521ba;
+    border-radius: 5px;
+    padding: 3px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#name {
+  text-decoration: none;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  padding: 3px;
+  margin: 10px auto;
+  color: #021d2b;
+  background: none;
+
+  &::placeholder {
+    opacity: .7;
+    font-size: 25px;
+    color: black;
+  }
+}
+
+.play {
+  font-size: 30px;
+  a {
+    text-decoration: none;
+    color: #c3055c;
+  }
+}

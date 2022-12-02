@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/60217b89b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title of the game -->
+      <div class="title">
+        <div class="first-img"><img src="./idea.svg" id="first-img" /></div>
+        <h1>
+          Memory Game
+        </h1>
+        <div id="second-img"><img src="./idea.svg" /></div>
+      </div>
+
+      <!-- Leader board details -->
+      <div class="leader-board-details">Show Leader Board</div>
+
+      <!-- Table for the score detail -->
+      <div class="score-table">
+        <!-- Table for easy mode -->
+        <table class="easy-scores">
+          <caption>
+            5 High Score Easy Mode
+          </caption>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Stars</th>
+            <th scope="col">Time</th>
+            <th scope="col">Moves</th>
+          </tr>
+        </table>
+
+        <!-- Table for Medium mode -->
+        <table class="medium-scores">
+          <caption>
+            5 High Score Medium Mode
+          </caption>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Stars</th>
+            <th scope="col">Time</th>
+            <th scope="col">Moves</th>
+          </tr>
+        </table>
+
+        <!-- Table for Hard mode -->
+        <table class="hard-scores">
+          <caption>
+            5 High Score Hard Mode
+          </caption>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Stars</th>
+            <th scope="col">Time</th>
+            <th scope="col">Moves</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Want to play Again -->
+      <div class="play">
+        Want to Play -> Click <span><a href="./index.html">HERE!</a></span>
+      </div>
+
+      <!-- footer for other details -->
+      <footer>Ashish Kumar Saini © All Right Reserved 2030</footer>
+    </div>
+
+    <!-- Javascript file -->
+    <script src="./leader-board.js"></script>
+  </body>
+</html>

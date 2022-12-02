@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/60217b89b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title of the game -->
+      <div class="title">
+        <div class="first-img"><img src="./idea.svg" id="first-img" /></div>
+        <h1>
+          Memory Game
+        </h1>
+        <div id="second-img"><img src="./idea.svg"  /></div>
+      </div>
+
+      <!-- Leader board details -->
+      <div class="leader-board">
+        <a href="./leader-board.html">Show Leader Board</a>
+      </div>
+
+      <!-- Game details -->
+      <div class="game-details">
+        <div class="star">
+          <em>&#9733;&#9733;&#9733;</em> <span class="moves">0 Moves</span>
+        </div>
+        <div>
+          <span class="time">0 Seconds</span>
+          <button class="restart">&#10227;</button>
+        </div>
+      </div>
+
+      <!-- Game level options -->
+      <div class="animated zoomInUp option">
+        <p>Come on player!! Choose Your level.</p>
+        <div class="level">
+          <button id="easy">Easy</button>
+          <button id="medium">Medium</button>
+          <button id="hard">Hard</button>
+        </div>
+      </div>
+
+      <!-- Game completing dash board -->
+      <div class="overlay">
+        <div class="game-completed">
+          <p>
+            CONGRATS!! You got <span class="rating">3</span>/3 rating and
+            completed in <span class="seconds">22</span> seconds with
+            <span class="moveCount">9</span> moves.<br />
+            Do you want to play it again?
+          </p>
+          <div class="play-again">
+            <div class="yes-no">
+              <button class="yes">Yes</button>
+              <button class="no">No</button>
+            </div>
+            <div class="progress">
+              <button class="save-progress">Save Your Progress</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enter name div -->
+      <form class="enterName animated flipInY">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Your First Name"
+        />
+        <button type="submit" id="submit">Enter</button>
+      </form>
+
+      <!-- Game paltform -->
+      <div class="game-platform"></div>
+
+      <!-- footer for other details -->
+      <footer>Ashish Kumar Saini © All Right Reserved 2030</footer>
+    </div>
+
+    <!-- Javascript file -->
+    <script src="./index.js"></script>
+  </body>
+</html>

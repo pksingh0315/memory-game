@@ -1,0 +1,129 @@
+//Media Quries
+@media screen and (max-width: 420px) {
+  .title {
+    display: flex;
+    margin: 20px 0;
+    color: #00bcd4;
+    align-items: center;
+    // justify-content: space-between;
+
+    .first-img {
+      text-align: start;
+      width: 75px;
+      margin-right: -2px;
+    }
+    #second-img {
+      text-align: end;
+      width: 75px;
+      margin: 0;
+      // margin-left: -2px; 
+    }
+    img {
+      width: 85%;
+    }
+    #first-img {
+      transform: scaleX(-1);
+      text-align: end;
+    }
+    h1 {
+      height: 60px;
+      border-radius: 10px;
+      color: hsla(0, 0%, 0%, 0.9);
+      font: normal 36px Varela Round, sans-serif;
+      animation: move linear 2000ms infinite;
+    }
+  }
+  
+  .leader-board {
+    // width: 95%;
+    margin: 1em  auto;
+  }
+  .game-details {
+    width: 90%;
+  }
+  .option {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .level {
+    button {
+      font-size: 18px;
+      padding: 6px;
+    }
+  }
+
+  
+  .game-platform {
+    padding: 10px;
+    margin: 20px 50px;
+    .icon {
+      font-size: 30px;
+      width: 65px;
+      height: 65px;
+    }
+  }
+  
+  .game-completed {
+    width: 95%;
+    p {
+      font-size: 14px;
+      padding: 10px;
+      line-height: 16px;
+    }
+  }
+
+  .play-again {
+    .yes-no {
+      button {
+        padding: 3px 15px;
+        border-radius: 5px;
+      }
+    }
+    .yes {
+      font-size: 18px;
+    }
+    .no {
+      font-size: 18px;
+    }
+    .progress {
+      margin: 10px;
+    }
+  }
+  footer {
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .leader-board-details {
+    margin: 1em auto;
+  }
+
+  table {
+    caption {
+      font-size: 18px;
+    }
+    th {
+      font-size: 18px;
+    }
+    td {
+      font-size: 18px;
+    }
+  }
+
+  .play {
+    padding: 5px;
+    font-size: 25px;
+  }
+
+  form {
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    position: fixed;
+  }
+}
